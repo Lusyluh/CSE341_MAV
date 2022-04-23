@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node start"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Lusyluh/CSE341_MAV/issues"
   },
-  "homepage": "https://github.com/Lusyluh/CSE341_MAV#readme"
+  "homepage": "https://github.com/Lusyluh/CSE341_MAV#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }

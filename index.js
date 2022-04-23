@@ -1,14 +1,14 @@
-const http = require('http');
+//this app starts a server and listens on port 3000 for connections
+//it will then responds with "Lusanda Mavuma" for requests in this route
+const express = require('express');
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const app = express();
+const port = process.env.PORT || 3000;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Lusanda Mavuma');
+app.get('/', (req, res) => {
+  res.send('Lusanda Magadla');
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
