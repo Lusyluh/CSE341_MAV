@@ -1,0 +1,19 @@
+{
+  "name": "lusanda",
+  "version": "1.0.0",
+  "description": "Web Backend Development II",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lusyluh/CSE341_MAV.git"
+  },
+  "author": "Lusanda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lusyluh/CSE341_MAV/issues"
+  },
+  "homepage": "https://github.com/Lusyluh/CSE341_MAV#readme"
+}
