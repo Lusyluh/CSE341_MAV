@@ -11,3 +11,15 @@ app.use('/', require('./routes'));
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+//connection to the mongo database
+const mongodb = require('./mongodb');
+
+
+mongodb.initDb((err, mongodb ) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port);
+  }
+});

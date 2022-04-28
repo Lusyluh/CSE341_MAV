@@ -7,3 +7,10 @@ routes.get('/', (req, res) => {
 
 
 module.exports = routes;
+
+const mongodb = require('./mongodb');
+
+
+  mongodb.getDb()
+    .db()
+    .collection('your_collection_name')
