@@ -13,7 +13,7 @@ app.listen(port, () => {
 });
 
 //connection to the mongo database
-const mongodb = require('./mongodb');
+const mongodb = require('./db');
 
 
 mongodb.initDb((err, mongodb ) => {
