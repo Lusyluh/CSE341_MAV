@@ -10,6 +10,7 @@ app.use('/', require('./routes'));
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
+  console.log('what is going on');
 });
 
 //connection to the mongo database
