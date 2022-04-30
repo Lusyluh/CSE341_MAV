@@ -8,7 +8,7 @@ routes.get('/', (req, res) => {
 
 module.exports = routes;
 
-const mongodb = require('./db');
+const mongodb = require('mongodb');
 
 
   mongodb.getDb()
